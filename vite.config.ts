@@ -22,10 +22,8 @@ export default defineConfig({
       }
     }
   },
-  // 本番時はgithubリポジトリをルートパスにする
-  base: (process.env.NODE_ENV === 'poduction')
-    ? '/vue-practice/' : './',
+  base: "./",
   build: {
-    outDir: 'docs'
+    outDir: 'dist'
   }
 })
