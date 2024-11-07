@@ -21,5 +21,9 @@ export default defineConfig({
         api: "modern-compiler",
       }
     }
+  },
+  base: './',
+  build: {
+    outDir: 'docs'
   }
 })
