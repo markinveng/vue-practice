@@ -13,6 +13,11 @@ const router = createRouter({
       path: '/todo',
       name: 'todo',
       component: () => import('@/views/TodoView.vue')
+    },
+    {
+      path: '/wether',
+      name: 'wether',
+      component: () => import('@/views/WetherView.vue')
     }
   ]
 })

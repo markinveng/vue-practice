@@ -19,7 +19,7 @@ const appList = ref<App[]>([
   {
     id: 2,
     name: 'お天気アプリ',
-    path: '/weather',
+    path: '/wether',
     description: '気象庁のAPIから天気を表示するアプリです。(未完)',
   },
 ])
@@ -38,10 +38,10 @@ export { appList }
 <template>
   <div class="appLink_wrapper">
     <li v-for="item in appList" :key="item.id" class="appLink_item">
-      <a :href="item.path" class="appLink_link">
+      <RouterLink :to="item.path" class="appLink_link">
         <h2 class="appLink_title green">{{ item.name }}</h2>
         <p class="appLink_description">{{ item.description }}</p>
-      </a>
+      </RouterLink>
     </li>
   </div>
 </template>
